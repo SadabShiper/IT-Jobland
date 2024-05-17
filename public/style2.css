@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    height: 10%;
+    font-family: sans-serif;
+}
+
+.logo {
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    font-family: 'Anton', sans-serif;
+    padding-left: 20px;
+}
+
+/* Menu styles */
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu .anc:hover {
+    background: rgb(108, 122, 168);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+/* Navigation bar styles */
+nav {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(15, 31, 87);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logout button styles */
+.logout {
+    padding-right: 20px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: rgb(27, 59, 103);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    background: rgb(227, 230, 240);
+    border-radius: 7px;
+}
+
+.logout a:hover {
+    background-color: rgb(178, 187, 217);
+}
+
+/* Dropdown design */  
+
+/* Dropdown Button */
+.dropbtn {
+    text-decoration: none;
+    color: rgb(27, 59, 103);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    background: rgb(227, 230, 240);
+    border-radius: 7px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 170px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: rgb(178, 187, 217);}
+
+
+/* =======================main section======================= */
+
+.main{
+    background: url("/public/img4.jpg") no-repeat;
+    background-size: cover;
+    align-items:center;
+    min-height: 85vh;
+    width: 100%;
+}
+.heading
+{
+    background-color: rgba(249, 245, 245, 0.4);
+    margin: 0;
+    padding: 0;
+}
+.main h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(63, 95, 163);
+    text-shadow: 1px 1px 5px rgb(203, 204, 218);
+}
+
+.main h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(7, 7, 7);
+    text-shadow: 1px 1px 5px rgb(230, 230, 245);
+    padding-top: 30px;
+}
+
+/* .main input{
+    height: 51px;
+    width:70%;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+
+.main input:hover{
+    background-color: rgb(237, 235, 241);
+} */
+
+.btn2{
+    height: 50px;
+    width: 25%;
+    background-color: rgb(108, 108, 200);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-left: -4px;
+}
+
+.btn2:hover{
+    background-color: rgb(79, 79, 170);
+    color: white;
+    transition: all 0.4s;
+}
+
+/* =====================career====================== */
+.ceta h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: rgb(26, 24, 90);
+}
+
+.blue{
+    color: rgb(41, 41, 109);
+}
+
+.blue:hover{
+    color: rgb(78, 75, 158);
+    cursor: pointer;
+}
+
+.ceta .card:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    transition: all 0.4s;
+    background-color: rgb(229, 229, 238);
+}
+
+.btn3{
+    background-color: rgb(65, 65, 128);
+    height: 60px;
+    width: 70%;
+    border: 1px solid rgb(41, 41, 109);
+    border-radius: 5px;
+    transition: all 0.4s;
+    color: white;
+}
+
+.btn3:hover{
+    background-color: rgb(86, 83, 163);
+    border: 1px solid rgb(78, 75, 158);
+    transition: all 0.4s;
+}
+
+/* =======================middle========================= */
+.middle{
+    width: 100%;
+    height: 50vh;
+}
+
+/* ======================footer====================== */
+
+.footer{
+    background-color: rgb(15, 31, 87);
+    color: white;
+
+}
+
+.footer p{
+    margin: 0;
+    color: rgb(230, 237, 213);
+}
+
+.link{
+    color: rgb(230, 237, 213);
+    transition: all 0.4s;
+}
+
+.link:hover{
+    color: rgb(132, 226, 224);
+    padding-left: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.footer input{
+    height: 45px;
+    width: 70%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.footer button{
+    height: 45px;
+    width: 20%;
+    border: none;
+    outline: none;
+    margin-left: -12px;
+    background: rgb(99, 99, 192);
+    color: white;
+    margin-top: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.footer button:hover{
+    background: rgb(122, 122, 201);
+}
+
+
+/* =============================================================== */
+.jobPost{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.jobPostForm{
+    width: 60%;
+    /* background: transparent; */
+    background-color: rgba(32, 32, 100, 0.2);
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: rgb(216, 216, 241);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-left:20px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.jobPostForm h2{
+    font-size: 36px;
+    text-align: center;
+}
+.jobPostForm .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: leøx;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(12, 12, 82);
+    padding:20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder{
+    color: rgb(12, 12, 82);
+}
+
+.jobPostForm .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.jobPostForm .btn:hover{
+    background: rgb(214, 214, 240);
+}
+
+
+/* =============================================================== */
+.showJobOffers{
+    padding-left: 8%;
+    width: 100%;
+    align-items: center;
+}
+
+.showJobOffers ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 90%;
+    text-align: left;
+}
+
+.showJobOffers ul li {
+    background-color: rgba(224, 224, 234, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    border: 5px;
+    margin: 8px;
+    list-style: none;
+    flex: 1 0 60%;
+    padding: 0;
+}
+
+.showJobOffers ul li .inputButton{
+    height: 50px;
+    width: 25%;
+    background-color: rgb(108, 108, 200);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    border-radius: 6px;
+}
+
+.showJobOffers ul li .inputButton:hover{
+    background-color: rgb(79, 79, 170);
+    color: white;
+    transition: all 0.4s;
+}
+
+
+.showCVs{
+    padding-left: 8%;
+    width: 100%;
+    align-items: center;
+}
+
+.showCVs ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 90%;
+    text-align: left;
+}
+
+.showCVs ul li {
+    background-color: rgba(224, 224, 234, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    border: 5px;
+    margin: 8px;
+    list-style: none;
+    flex: 1 0 60%;
+    padding: 0;
+}
+
+
+

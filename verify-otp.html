@@ -1,0 +1,62 @@
+<!-- verify-otp.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <script src="verify-otp.js"></script>
+    <link rel="stylesheet" href="./public/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Verify OTP</h1>
+        <form id="otp-form">
+            <div class="input-box">
+                <input type="text" id="otp" name="otp" required placeholder="Enter OTP"><br><br>
+            </div>
+            <button type="button" onclick="verifyOTP()" class="btn">Verify OTP</button>
+        </form>
+    
+        <div id="verification-result"></div> <!-- To display verification result -->
+    </div>
+    
+
+    <script>
+       // how do I export the variable storedOTP_forgot from app.js to here?
+       
+       function verifyOTP() {
+    const otp = document.getElementById("otp").value;
+    
+    // Make an AJAX request to verify the OTP
+    fetch('/verify-otp', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ otp: otp })
+    })
+    .then(response => {
+        if (response.status === 200) {
+            // Correct OTP, redirect to sign-in page
+            console.log("OK");
+            window.location.href = '/resetpassword.html';
+        } else {
+            // Incorrect OTP, display error message
+            return response.text().then(errorMessage => {
+                const verificationResultDiv = document.getElementById("verification-result");
+                verificationResultDiv.textContent = errorMessage;
+            });
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        // Handle errors if any
+    });
+}
+
+    </script>
+</body>
+</html>

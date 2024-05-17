@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="public/styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <form action="/signin" method="post">
+            <h1>
+                Sign In
+            </h1>
+            <div class ="input-box">
+                <input type="email" name="job_seeker_email" id="job_seeker_email" placeholder="Email" required>
+            </div>
+            <div class ="input-box">
+                <input type="password" name="job_seeker_password" id="job_seeker_password" placeholder="Password" required>
+                <!-- <i class="bx bx-show"></i> -->
+            </div>
+            <br>
+            <div class="forgot">
+                <p>Forgot your password? <a href="/forgot-password"><b>Reset Password</b></a></p>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+            
+            <div class="register-link">
+                <p>Don't have an account? <a href="/signup.html"><b>Register!</b></a></p>
+            </div>
+            
+        </form>
+    </div>
+    <script>
+        const passwordInput = document.getElementById('job_seeker_password');
+        const eyeIcon = document.querySelector('.input-box i');
+
+        eyeIcon.addEventListener('click', () => {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.classList.remove('bx-show');
+                eyeIcon.classList.add('bx-hide');
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.classList.remove('bx-hide');
+                eyeIcon.classList.add('bx-show');
+            }
+        });
+    </script>
+</body>
+
+</html>

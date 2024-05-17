@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post a Job Offer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style2.css">
+    <link rel="stylesheet" href="/public/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Employer Portal</div>
+      <div class="menu">
+        <a class="anc" href="employerFirstPage.html">Home</a>
+        <a class="anc" href="viewCV.html">Review CVs</a>
+        <a class="anc" href="#">Blog</a>
+      <a class="anc" href="#">Top Companies</a>
+      </div>
+      <div class="logout">
+        <a href="first_page.html">Log out</a>
+      </div>
+    </nav>
+    
+    <div class="main">
+    <header class="text-center">
+      <h2>Post a Job Offer</h2>
+    </header>
+    <div class="jobPost">
+    <section class="jobPostForm">
+      <form action="/jobPost" method="POST">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required class ="input-box" /><br />
+
+        <label for="jobDescription">Job Description:</label>
+        <textarea id="jobDescription" name="jobDescription" required class ="input-box"></textarea
+        ><br />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required class ="input-box"/><br />
+
+        <label for="qualification">Qualifications:</label>
+        <input
+          type="text"
+          id="qualification"
+          name="qualification"
+          required
+          class ="input-box" /><br />
+
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" required class ="input-box"/><br />
+
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required class ="input-box"/><br />
+
+        <button type="submit" class="btn">Post Job</button>
+      </form>
+    </section>
+    </div>
+    </div>
+
+    <section class="middle">
+      
+    </section>
+<!-- =========================footer======================= -->
+    <section class="footer py-5">
+      <div class="container py-5">
+          <div class="row">
+              <div class="col-lg-10 m-auto">
+                  <div class="row">
+                      <div class="col-lg-3">
+                          <h4 class="py-4">ABOUT US</h4>
+                          <p>Lorem it. Deleniti facilis iusto praesentium eveniet, eaque a laudantium perspiciatis veniam consectetur at harum dolorem saepe natus. Error veniam laboriosam fuga sint.</p>   
+                      </div>
+                      <div class="col-lg-3">
+                          <h4 class="py-4">CONTACT INFO</h4>
+                          <p>Address: Your address goes here. Demo Addres</p>  
+                           <p class="link py-3">Email : itjobland@gamil.com</p>
+                           <p class="link">Phone : +880166784872</p>
+                      </div>
+                      <div class="col-lg-3">
+                          <h4 class="py-4">IMPORTANT LINK</h4>
+                           <p class="link py-1">View Project</p>
+                           <p class="link py-1">Testimonial</p>
+                           <p class="link py-1">Support</p>
+                          <p class="link py-1">Terms & Condition</p>
+                      </div>
+                      <div class="col-lg-3">
+                          <h4 class="py-4">NEWSLETTER</h4>
+                           <p>Lorem ipsum dolor sit amet.</p>
+                           <input type="text" placeholder="Enter your email">
+                           <button class="">Go</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+</html>
